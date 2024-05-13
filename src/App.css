@@ -1,0 +1,12 @@
+.navigationButtons {
+  height: 2.2rem;
+  width: fit-content;
+  font-weight: bold;
+  background-color: dimgrey;
+  color: white;
+}
+
+.navigationButtons:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0.4rem white;
+}

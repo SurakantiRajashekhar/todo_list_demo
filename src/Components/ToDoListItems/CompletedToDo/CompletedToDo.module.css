@@ -1,0 +1,69 @@
+.navigationButtons {
+  height: 2.2rem;
+  width: fit-content;
+  font-weight: bold;
+  background-color: dimgrey;
+  color: white;
+}
+
+.navigationButtons:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0.4rem white;
+}
+
+.todoStatus {
+  display: flex;
+  gap: 2rem;
+  position: sticky;
+}
+
+.active {
+  background-color: indianred;
+}
+.clear {
+  margin-left: 30rem;
+}
+
+.todoList {
+  margin-top: 2rem;
+}
+
+.count {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.todoListItems {
+  display: flex;
+  justify-content: space-between;
+  background-color: dimgray;
+  padding: 10px;
+  margin: 5px;
+}
+
+.todoListItems h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  color: chocolate;
+}
+
+.todoListItems .deleteIcon,
+.editIcon {
+  font-size: 1.8rem;
+  margin-right: 1rem;
+  margin-top: 1.3rem;
+  color: burlywood;
+}
+
+.todoListItems .deleteIcon:hover,
+.checkIcon:hover,
+.editIcon:hover {
+  cursor: pointer;
+  box-shadow: 0 0 1rem white;
+}
+
+.todoListItems .checkIcon {
+  font-size: 1.8rem;
+  margin-top: 1.2rem;
+  color: burlywood;
+}

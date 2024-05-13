@@ -1,0 +1,55 @@
+h1 {
+  text-align: center;
+}
+
+.todoContent {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid white;
+  padding-bottom: 30px;
+  top: 0;
+  position: sticky;
+}
+
+.todoTitle {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+}
+
+.todoTitle label {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.todoTitle input {
+  padding: 0.5rem;
+  border: none;
+  width: 25rem;
+  font-size: 1rem;
+}
+
+.todoTitle input:focus {
+  outline: none;
+  box-shadow: 0 0 0.4rem white;
+}
+
+button {
+  height: 2.2rem;
+  width: 3.5rem;
+  margin-top: 2.5rem;
+  background-color: rgb(127, 94, 12);
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0.4rem white;
+}
