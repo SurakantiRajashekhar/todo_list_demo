@@ -46,6 +46,7 @@ function AddToDo() {
           </div>
           <div className={styles.todoTitle}>
             <button
+              className={styles.addButton}
               onClick={() =>
                 AddToAllToDo({
                   title,

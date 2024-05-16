@@ -64,7 +64,7 @@ function InProgressToDo() {
               )}
             </div>
 
-            <div>
+            <div className={styles.iconContainer}>
               <FaEdit
                 className={styles.editIcon}
                 title="Edit?"

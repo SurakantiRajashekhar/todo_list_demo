@@ -53,3 +53,58 @@ button:hover {
   cursor: pointer;
   box-shadow: 0 0 0.4rem white;
 }
+
+.update {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 1300px) {
+  .todoTitle input {
+    width: 18rem;
+  }
+
+  .todoTitle label {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 839px) {
+  .todoTitle input {
+    width: 16rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .todoContent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .todoTitle input {
+    height: 2rem;
+    width: 20rem;
+    font-size: 1.2rem;
+    margin-left: 1.4rem;
+  }
+
+  .todoTitle {
+    margin-bottom: 2rem;
+  }
+
+  .todoTitle label {
+    font-size: 1.4rem;
+    margin-bottom: 1.4rem;
+  }
+
+  button {
+    height: 3rem;
+    width: fit-content;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .update {
+    display: flex;
+  }
+}

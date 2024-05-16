@@ -20,9 +20,6 @@
 .active {
   background-color: indianred;
 }
-.clear {
-  margin-left: 30rem;
-}
 
 .todoList {
   margin-top: 2rem;
@@ -61,4 +58,14 @@
   font-size: 1.8rem;
   margin-top: 1.2rem;
   color: burlywood;
+}
+
+@media (max-width: 760px) {
+  .navigationButtons {
+    font-size: 1rem;
+  }
+
+  .todoStatus {
+    gap: 0.7rem;
+  }
 }

@@ -47,17 +47,14 @@
   color: chocolate;
 }
 
-.todoListItems .deleteIcon,
-.editIcon {
+.todoListItems .deleteIcon {
   font-size: 1.8rem;
   margin-right: 1rem;
   margin-top: 1.3rem;
   color: burlywood;
 }
 
-.todoListItems .deleteIcon:hover,
-.checkIcon:hover,
-.editIcon:hover {
+.todoListItems .deleteIcon:hover {
   cursor: pointer;
   box-shadow: 0 0 1rem white;
 }
@@ -66,4 +63,34 @@
   font-size: 1.8rem;
   margin-top: 1.2rem;
   color: burlywood;
+}
+
+.todoListItems p {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 760px) {
+  .count {
+    font-size: 1rem;
+  }
+
+  .todoListItems .deleteIcon {
+    font-size: 1.2rem;
+    margin-right: 0.1rem;
+  }
+
+  .todoListItems p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .todoListItems .deleteIcon {
+    font-size: 1.2rem;
+    margin-right: 0.1rem;
+  }
+
+  .todoListItems p {
+    font-size: 0.7rem;
+  }
 }

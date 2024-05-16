@@ -1,6 +1,8 @@
 import styles from "./EditToDo.module.css";
 import useAddToAllToDo from "../CustomHooks/useAddToAllToDo";
 import { useCommonProps } from "../ContextAPI/ToDoTabsContext";
+import AllToDo from "../ToDoListItems/AllToDo/AllToDo";
+import InProgressToDo from "../ToDoListItems/InProgress/InProgressToDo";
 
 function EditToDo() {
   const {
@@ -16,9 +18,21 @@ function EditToDo() {
     setTitle,
     setDescription,
     setIsEdit,
+    isClicked,
   } = useCommonProps();
 
   const { AddToAllToDo } = useAddToAllToDo(setInProgress, setAllToDos);
+
+  const handleCancel = () => {
+    setTitle("");
+    setDescription("");
+
+    setIsEdit(false);
+    setToggleToDo(true);
+    isClicked === "all" && <AllToDo />;
+
+    isClicked === "in-progress" && <InProgressToDo />;
+  };
 
   return (
     <div>
@@ -42,28 +56,36 @@ function EditToDo() {
             />
           </div>
 
-          <div className={styles.todoTitle}>
-            <button
-              onClick={() =>
-                AddToAllToDo({
-                  title,
-                  description,
-                  isEdit,
-                  inProgress,
-                  editId,
-                  completedTodos,
-                  setToggleToDo,
-                  setTitle,
-                  setDescription,
-                  setIsEdit,
-                })
-              }
-            >
-              Update
-            </button>
-          </div>
-          <div className={styles.todoTitle}>
-            <button>Cancel</button>
+          <div className={styles.update}>
+            <div className={styles.todoTitle}>
+              <button
+                onClick={() =>
+                  AddToAllToDo({
+                    title,
+                    description,
+                    isEdit,
+                    inProgress,
+                    editId,
+                    completedTodos,
+                    setToggleToDo,
+                    setTitle,
+                    setDescription,
+                    setIsEdit,
+                  })
+                }
+              >
+                Update
+              </button>
+            </div>
+            <div className={styles.todoTitle}>
+              <button
+                onClick={() => {
+                  handleCancel();
+                }}
+              >
+                Cancel
+              </button>
+            </div>
           </div>
         </div>
       </div>

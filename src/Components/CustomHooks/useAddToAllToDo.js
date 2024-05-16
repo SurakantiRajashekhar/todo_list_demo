@@ -16,7 +16,8 @@ const useAddToAllToDo = (setInProgress, setAllToDos) => {
     if (!title || !description) {
       alert("plese enter the correct details");
       return;
-    } else if (isEdit) {
+    }
+    if (isEdit) {
       let completion_date = new Date();
       let date = completion_date.getDate();
       let month = completion_date.getMonth() + 1;

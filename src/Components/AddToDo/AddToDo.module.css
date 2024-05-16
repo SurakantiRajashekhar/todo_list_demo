@@ -24,6 +24,7 @@ h1 {
   text-align: center;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  font-size: 1.5rem;
 }
 
 .todoTitle input {
@@ -52,4 +53,49 @@ button {
 button:hover {
   cursor: pointer;
   box-shadow: 0 0 0.4rem white;
+}
+
+@media (max-width: 1050px) {
+  .todoTitle input {
+    width: 21rem;
+  }
+
+  @media (max-width: 839px) {
+    .todoTitle input {
+      width: 16rem;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .todoContent {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid white;
+    padding-bottom: 15px;
+  }
+
+  .todoTitle input {
+    height: 2rem;
+
+    width: 20rem;
+    font-size: 1.2rem;
+    margin-left: 1.4rem;
+  }
+
+  .todoTitle {
+    margin-bottom: 2rem;
+  }
+
+  .todoTitle label {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .addButton {
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
 }

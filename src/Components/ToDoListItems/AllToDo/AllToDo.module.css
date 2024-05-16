@@ -67,3 +67,56 @@
   margin-top: 1.2rem;
   color: burlywood;
 }
+
+.todoListItems p {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 760px) {
+  .count {
+    font-size: 1rem;
+  }
+
+  .todoListItems {
+    padding: 1px;
+    margin: 1px;
+  }
+
+  .todoListItems .deleteIcon,
+  .editIcon {
+    font-size: 1.2rem;
+    margin-right: 0.2rem;
+  }
+
+  .todoListItems .checkIcon {
+    font-size: 1rem;
+  }
+
+  .iconContainer {
+    flex-direction: row;
+    width: 23%;
+    font-size: 1.1rem;
+  }
+
+  .todoListItems p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .todoListItems .deleteIcon,
+  .editIcon {
+    font-size: 1rem;
+    margin-right: 0.2rem;
+  }
+
+  .todoListItems p {
+    font-size: 0.7rem;
+  }
+
+  .iconContainer {
+    flex-direction: row;
+    width: 24%;
+    font-size: 1rem;
+  }
+}
